@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {
   InputGroup,
@@ -11,6 +11,12 @@ import {
 } from 'reactstrap';
 
 function App() {
+  const [maxResults, setMaxResults] = useState(10);
+  const [startIndex, setStartIndex] = useState(1);
+  const [query, setQuery] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [cards, setCards] = useState([]);
+  
   const mainHeader = () => {
     return (
       <div className='main-image d-flex jsutify-content-center align-items-center flex-column'>
