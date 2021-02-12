@@ -1,5 +1,5 @@
 ## TODO list
 
-* fix reactstarp bug. 
+* fix reactstrap bug. 
 
   [ detail ] it looks does'nt work for view.
